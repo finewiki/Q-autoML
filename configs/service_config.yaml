@@ -1,0 +1,26 @@
+api:
+  host: "0.0.0.0"
+  port: 8000
+  debug: false
+  workers: 4
+
+data_service:
+  yahoo_finance:
+    rate_limit: 2000
+    timeout: 30
+  alpha_vantage:
+    api_key: "YOUR_API_KEY"
+    rate_limit: 500
+    
+notification_service:
+  email:
+    smtp_host: "smtp.gmail.com"
+    smtp_port: 587
+    use_tls: true
+  slack:
+    webhook_url: "YOUR_WEBHOOK_URL"
+
+model_service:
+  max_training_time: 3600
+  max_memory_usage: "4G"
+  parallel_jobs: 4

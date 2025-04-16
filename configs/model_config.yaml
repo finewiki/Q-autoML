@@ -1,0 +1,24 @@
+xgboost:
+  max_depth: 6
+  learning_rate: 0.1
+  n_estimators: 100
+  subsample: 0.8
+  colsample_bytree: 0.8
+  objective: 'binary:logistic'
+  eval_metric: 'auc'
+
+lightgbm:
+  num_leaves: 31
+  learning_rate: 0.1
+  n_estimators: 100
+  subsample: 0.8
+  colsample_bytree: 0.8
+  objective: 'binary'
+  metric: 'auc'
+
+catboost:
+  iterations: 100
+  learning_rate: 0.1
+  depth: 6
+  l2_leaf_reg: 3
+  loss_function: 'Logloss'
