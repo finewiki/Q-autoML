@@ -1,0 +1,14 @@
+[package]
+name = "feature_engine_rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "feature_engine_rust"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.18", features = ["extension-module"] }
+ndarray = "0.15"
+statrs = "0.16"
+numpy = "0.18"
