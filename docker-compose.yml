@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  python_api:
+    build: 
+      context: .
+      dockerfile: Dockerfile.python
+    ports:
+      - "8000:8000"
+
+  go_processor:
+    build:
+      context: ./services/data_processor
+      dockerfile: Dockerfile.go
+    ports:
+      - "8081:8081"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.node
+    ports:
+      - "3000:3000"
+
+  feature_engine:
+    build:
+      context: ./src/feature_engine
+      dockerfile: Dockerfile.rust
