@@ -1,0 +1,32 @@
+base_config:
+  project_name: Q-autoML
+  random_state: 42
+  verbose: true
+  log_level: INFO
+
+data_config:
+  technical_indicators:
+    - SMA_20
+    - SMA_50
+    - EMA_20
+    - RSI
+    - MACD
+    - ATR
+    - Bollinger_Upper
+    - Bollinger_Lower
+  fill_method: ffill
+  scaling_method: standard
+  test_size: 0.2
+  validation_size: 0.1
+
+model_config:
+  model_type: lightgbm
+  batch_size: 32
+  num_epochs: 100
+  learning_rate: 0.001
+
+training_config:
+  device: cpu
+  num_workers: 4
+  enable_checkpointing: true
+  primary_metric: val_loss
