@@ -73,4 +73,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-The project may give some errors due to integration, docker errors and development process. You can support by editing these errors or creating issues. by Wiki 
+The project may give some errors due to integration, docker errors and development process. You can support by editing these errors or creating issues. by (Umid)(https://github.com/RzayevUmid0023?tab=repositories)
